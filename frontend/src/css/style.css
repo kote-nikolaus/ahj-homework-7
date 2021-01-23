@@ -1,0 +1,164 @@
+body {
+  background-color: #292F36;
+  padding: 10px 20px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #292F36;
+}
+
+h1 {
+  font-size: 40px;
+  color: #F5F5F5;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.ticket-full {
+  width: 780px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  margin-bottom: 15px;
+}
+
+.ticket-short {
+  display: flex;
+  align-items: center;
+}
+
+.ticket-name {
+  width: 400px;
+  padding: 12px;
+}
+
+.ticket-date {
+  width: 250px;
+  padding: 12px;
+}
+
+.ticket-description {
+  width: 780px;
+  padding: 20px 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  height: 43px;
+  background-color: #4ECDC4;
+  border: 0;
+}
+
+button:hover {
+  background-color: #FE5F55;
+}
+
+.add-button {
+  width: 150px;
+  color: #F5F5F5;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.ticket-button {
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  background-color: #4ECDC4;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+.edit-button {
+  background-color: #4ECDC4;
+  background-image: url('../img/edit.png');
+}
+
+.delete-button {
+  background-color: #FE5F55;
+  background-image: url('../img/delete.png');
+}
+
+.delete-button:hover {
+  background-color: #4ECDC4;
+}
+
+.done-button {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-left: 12px;
+  margin-right: 15px;
+  border: solid 2px #4ECDC4;
+  background-color: #F5F5F5;
+}
+
+.done-button-pressed {
+  background-color: #4ECDC4;
+  background-image: url('../img/done.png');
+  background-position: center center;
+  background-size: 15px;
+  background-repeat: no-repeat;
+}
+
+.done-button:hover {
+  background-color: #F5F5F5;
+  cursor: pointer;
+}
+
+.done-button-pressed:hover {
+  background-color: #4ECDC4;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  width: 500px;
+  height: 320px;
+  background-color: #F5F5F5;
+  left: 60px;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.modal-active {
+  display: flex;
+}
+
+#name {
+  height: 30px;
+  width: 400px;
+  display: block;
+}
+
+#description {
+  min-height: 60px;
+  width: 400px;
+  display: block;
+}
+
+.input-name-label {
+  display: block;
+}
+
+.description-label {
+  display: block;
+}
+
+.modal-buttons-group {
+  display: flex;
+}
+
+.modal-button {
+  width: 150px;
+  color: #F5F5F5;
+  font-weight: 700;
+  margin: 0 30px;
+}
