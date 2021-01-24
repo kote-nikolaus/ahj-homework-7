@@ -35,7 +35,7 @@ addButton.addEventListener('click', openModal);
 
 function POSTData(params, method) {
   const queryString = `method=${method}`;
-  const url = `http://localhost:7070/?${queryString}`;
+  const url = `https://ahj-homework-7.herokuapp.com/?${queryString}`;
   const xhr = new XMLHttpRequest();
   xhr.open('POST', url, true);
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
@@ -54,7 +54,7 @@ function POSTData(params, method) {
 function getAllTickets() {
   tasksList.innerHTML = '';
   const queryString = 'method=allTickets';
-  const url = `http://localhost:7070/?${queryString}`;
+  const url = `https://ahj-homework-7.herokuapp.com/?${queryString}`;
   const xhr = new XMLHttpRequest();
   xhr.open('GET', url, true);
   xhr.responseType = 'json';
@@ -110,7 +110,7 @@ function showDescription(e) {
   if (descriptionBlock.classList.contains('hidden')) {
     const thisTicketId = e.currentTarget.closest('.ticket-full').dataset.id;
     const queryString = `method=ticketById&id=${thisTicketId}`;
-    const url = `http://localhost:7070/?${queryString}`;
+    const url = `https://ahj-homework-7.herokuapp.com/?${queryString}`;
     const xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
     xhr.responseType = 'json';
